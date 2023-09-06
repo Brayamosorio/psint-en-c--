@@ -1,0 +1,206 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "hola mundo ";
+  return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+ 
+int main() {
+  
+  string nombre;
+  cout<<"cual es su nombre"<<endl;
+  cin>>nombre;
+  cout<<" su nombre es " " " <<nombre;
+
+
+  return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+ 
+int main() {
+  
+  int x;
+  int y ;
+  int sum ;
+
+  cout<<"escriba un numero"<<endl;
+  cin>>x;
+  cout<<"escriba otro numero"<<endl;
+  cin>>y;
+ 
+  sum=x+y;
+  cout<<"el resultado de su suma es" "  " <<sum;
+
+
+  return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+ 
+int main() {
+  
+  int x;
+  
+
+  cout<<"escriba su edad"<<endl;
+  cin>>x;
+  
+  if (x>=18){
+    cout<<"usted es mayor de edad";
+  } else {
+      cout<<"usted es menor de edad";
+    }
+  
+   return 0;
+    
+ }
+
+#include <iostream>
+using namespace std;
+ 
+int main() {
+  
+
+
+ for ( int i = 0; i <= 100; i++){
+   cout<< i <<endl;
+ }
+ 
+  
+ return 0;
+ }
+
+#include <iostream>
+using namespace std;
+ 
+int main() {
+  
+
+  int x; 
+  cout<<"escriba un numero";
+  cin>>x;
+
+
+
+ for ( int i = 0; i <= x; i++){
+   cout<< i <<endl;
+ }
+ 
+  
+ return 0;
+ }
+
+#include <iostream>
+using namespace std;
+ 
+int main() {
+  
+  int oper1;
+  int oper2;
+  int x; 
+  cout<<"escriba las libras que desea convertir"<<endl;
+  cin>>x;
+  oper1= x*0.454;
+  oper2=x*453.59;
+
+ cout<<x<<"libras son "<<oper1<<"kilogramos"<<endl;
+ cout<<x<<"libras son "<<oper2<<"gramos"<<endl;
+
+ 
+  
+ return 0;
+ }
+
+
+
+#include <iostream>
+using namespace std;
+int main() {
+  
+  int kelvin;
+  int celcius;
+  int faren;
+  int temp; 
+  int escala;
+  cout<<"escriba una temperatura"<<endl;
+  cin>>temp;
+ cout<<"escriba en que escala lo desea medir, 1 para celcius, 2 para fahrenheit y 3 para kelvin"<<endl;
+ cin>>escala;
+ 
+  if (escala==1){
+    celcius=temp;
+		faren= (temp* 9/5) + 32;
+		kelvin= temp+ 273.15;
+
+    cout<<"su temperatura en celcius es"<<celcius<<endl;
+    cout<<"su temperatura en faren es"<<faren<<endl;
+    cout<<"su temperatura en kelvin es"<<kelvin<<endl;
+  }
+
+  if (escala==2){
+    celcius=(temp - 32) * 5/9;
+		faren=temp;
+		kelvin= celcius+273.15;
+    cout<<"su temperatura en celcius es"<<celcius<<endl;
+    cout<<"su temperatura en faren es"<<faren<<endl;
+    cout<<"su temperatura en kelvin es"<<kelvin<<endl;
+
+  }
+  if(escala==3){
+    celcius=(temp-273.15);
+		faren= (temp- 273.15) *9/5 + 32;
+		kelvin= temp;
+    cout<<"su temperatura en celcius es"<<celcius<<endl;
+    cout<<"su temperatura en faren es"<<faren<<endl;
+    cout<<"su temperatura en kelvin es"<<kelvin<<endl;
+  }
+
+ 
+ return 0;
+ }
+
+
+
+#include <iostream>
+using namespace std;
+ 
+
+int main() {
+    int N;
+    double nota, suma, porcentaje = 0.0;
+    
+    
+    cout << "Ingrese la cantidad de notas (N): ";
+    cin >> N;
+    
+    for (int i = 1; i <= N; ++i) {
+        cout << "Ingrese la nota "  << ": ";
+        cin >> nota;
+        suma += nota;
+    }
+    
+    
+    double promedio = suma / N;
+
+    double porcentaje = (nota / 10) * 20;
+    
+    
+    cout << "El promedio de las notas ingresadas es: " << promedio <<std::endl;
+   cout << "La equivalencia del porcentaje de la tercera nota en la FESC es: " << porcentaje << "%" << endl;
+    
+    return 0;
+}
+
+ 
